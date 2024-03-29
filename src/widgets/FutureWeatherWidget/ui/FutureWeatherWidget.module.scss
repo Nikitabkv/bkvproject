@@ -1,0 +1,38 @@
+.futureWeatherWidgetWrapper {
+  overflow: hidden;
+  background: rgba(145, 144, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  padding: 32px 0 32px 64px;
+  -webkit-backdrop-filter: blur(9.2px);
+  position: relative;
+
+  button {
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: rgba(145, 144, 255, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+  }
+
+  .buttonPrev {
+    right: 12px;
+    top: 68px;
+  }
+  .buttonNext {
+    left: 12px;
+    top: 68px;
+  }
+
+  .cardsCarousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}

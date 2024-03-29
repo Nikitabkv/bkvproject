@@ -1,0 +1,90 @@
+.inputWrapper {
+  height: 60px;
+  width: -webkit-fill-available;
+  background: rgba(145, 144, 255, 0.07);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: rgba(145, 144, 255, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+  }
+
+  input {
+    height: 24px;
+    width: 250px;
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    background: rgba(145, 144, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+
+.foundCitiesWrapper {
+
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  animation: expandHeight 0.3s ease-in-out;
+
+  @keyframes expandHeight {
+    0% {
+      max-height: 0;
+      opacity: 0;
+    }
+    100% {
+      max-height: 999px; /* Конечная высота 100% */
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    flex-grow: 1;
+    min-height: 76px;
+    background: rgba(145, 144, 255, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    padding: 8px;
+    -webkit-backdrop-filter: blur(9.2px);
+
+    span {
+      font-weight: 300;
+    }
+  }
+}
